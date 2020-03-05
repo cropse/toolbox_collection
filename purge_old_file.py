@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from send2trash import send2trash
 
-# useage: python3 purge_old_file
+# useage: python3 purge_old_file.py {folder_path}
 parser = argparse.ArgumentParser()
 parser.add_argument("folder_path", type=str, help="folder you want to scan")
 parser.add_argument("-d", "--days", type=int, default=30, help="days you want to delete")
